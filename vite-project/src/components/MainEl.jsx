@@ -12,7 +12,7 @@ export function MainEl() {
                     return (
                     <li className='grid-item' key="{api.id}">
                         <p>{api.name}</p>
-                        <button className="btn" onClick={() => setCount(count + 1)}>{count}</button>
+                        <button className="btn" onClick={() => setCount((prev) => prev + 1)}>{count}</button>
                     </li>   
                 )
                 })}
